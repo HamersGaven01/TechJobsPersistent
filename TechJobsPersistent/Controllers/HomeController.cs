@@ -52,7 +52,9 @@ namespace TechJobsPersistent.Controllers
                 };
 
                 context.Jobs.Add(newJob);
+
                 context.SaveChanges();
+
                 //JobSkill jobSkill = new JobSkill();
                 foreach (var skill in selectedSkills)
                 {
